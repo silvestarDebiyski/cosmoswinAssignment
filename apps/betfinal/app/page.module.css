@@ -81,7 +81,7 @@ a:hover, .dropdown:hover .dropbtn:hover {
 .bonusCardClaimed {
     /* border-radius: 12px; */
 		padding: 1rem;
-		background: #beb8b8;
+		background: #bebbae;
 		box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 		max-width: 300px;
     margin-bottom: 20px;
@@ -95,7 +95,7 @@ a:hover, .dropdown:hover .dropbtn:hover {
       font-size: 1.2rem,
     }
     &:hover {
-      background-color: #778a77ad;
+      background-color: #8a8677ad;
     }
 }
 
