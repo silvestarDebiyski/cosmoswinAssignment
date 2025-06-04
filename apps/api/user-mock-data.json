@@ -5,11 +5,7 @@
     "registrationDate": "2025-01-10",
     "country": "Brazil",
     "isKYCApproved": true,
-    "currentBalance": 0,
-    "language": "en",
-    "collectedBonuses": [
-      "BTF-Welcome"
-    ]
+    "currentBalance": 0
   },
   {
     "username": "oneDepUser",

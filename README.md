@@ -1,9 +1,10 @@
 # COSMOSWIN and BETFINAL APPS
 
 ## How to install and run the apps:
+        Firstly make sure you have, node version v20.13.1 and npm version 10.5.2 or higher, installed.
         To install and run the apps just double click the run-dev.bat file inside this directory, but before that make sure you have the following ports free [3000, 3001, 4000]
         run-dev.bat runs npm install to install dependencies and npm run dev which starts the apps Betfinal, cosmoswin and a shared server
-            that fetches the users or bonuses and updates the users
+            that fetches users or bonuses and updates the users
 
         COSMOSWINASSIGNMENT/
             │
