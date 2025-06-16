@@ -36,9 +36,16 @@ export default function DepositPage() {
 		let selectedUser: any = { ...user };
 		selectedUser.currentBalance = selectedUser.currentBalance + depositAmount;
 		selectedUser.depositCount = selectedUser.depositCount + 1;
-		const result = await updateUser(selectedUser);
-		await setUser(result);
-		setUser(result);
+		// const result = await updateUser(selectedUser);
+		const res = await fetch('/api/update-user', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify(selectedUser),
+		});
+
+		const result2 = await res.json();
+		await setUser(result2.updatedUser);
+		setUser(result2.updatedUser);
 		const depositMSG =
 			t.depositMessage1 + ' ' + depositAmount + ' ' + t.depositMessage2;
 		setSuccessDeposit(depositMSG);
